@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'colors';
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  font-family: Kanit, sans-serif;
+  font-weight: 500;
+  max-width: 750px;
+  margin: 0 auto;
+
+  &.light {
+    background-color: $white;
+    color: $black;
+
+    input {
+      border-color: $purple-light;
+      color: $purple-light;
+
+      &:focus {
+        box-shadow: 0 0 10px 5px #c4c1ff;
+      }
+    }
+
+    .done {
+      color: #8e8e8e;
+    }
+
+    .task-modal {
+      background: $white;
+    }
+
+    .modal-body {
+
+      & input {
+        border-color: $purple-light;
+        color: $purple-light;
+        background: $white;
+
+        &:focus {
+          box-shadow: 0 0 0 2px #c4c1ff;
+          outline: none;
+        }
+      }
+    }
+
+    .left-side {
+      & input {
+        color: $black;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    background-color: $black;
+    color: $white;
+  }
+
+}
+
+
+
+

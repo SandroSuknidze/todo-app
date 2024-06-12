@@ -1,0 +1,180 @@
+@import 'colors';
+
+
+.App {
+  align-items: center;
+  position: relative;
+}
+
+.App-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.head-text {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+
+}
+
+.search {
+  padding: 10px 15px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  width: 100%;
+  background-color: transparent;
+  color: $white;
+  font-family: inter, sans-serif;
+  line-height: 16px;
+  outline: none;
+
+
+  &:focus {
+    box-shadow: 0 0 0 2px gray;
+  }
+
+}
+
+.search-icon {
+  position: absolute;
+  right: 16px;
+}
+
+.search-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.switch {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  padding: 8px;
+  background-color: $purple-light;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $purple-medium;
+    box-shadow: 0 0 10px 5px rgba($purple-medium, 0.5);
+  }
+}
+
+.select {
+  height: 38px;
+  min-width: 143px;
+  padding: 8px;
+  background: $purple-medium;
+  border-radius: 5px;
+  color: $white;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: Kanit, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  user-select: none;
+  border: 2px solid $purple-medium;
+
+
+  &.active {
+    background: $purple-dark;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px 5px rgba($purple-medium, 0.5);
+  }
+
+  & option {
+    text-transform: capitalize;
+    padding: 4px 6px;
+
+    &:hover {
+      background: lighten($purple-light, 20%);
+    }
+
+  }
+
+
+  & p {
+    margin: 0;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.dropdown-box {
+  position: absolute;
+  font-size: 16px;
+  font-family: Kanit, sans-serif;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid $purple-light;
+  text-align: left;
+  color: $purple-light;
+  background-color: $white;
+  padding: 0;
+  left: -2px;
+  top: 36px;
+  width: 143px;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main {
+  max-width: 520px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+footer {
+  position: absolute;
+  top: 85.4vh;
+  right: 0;
+}
+
+.add {
+  width: 50px;
+  height: 50px;
+  background: $purple-light;
+  border-radius: 100%;
+  text-align: center;
+  padding: 11px;
+  margin-right: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px rgba($purple-medium, 0.5);
+  border: 2px solid $purple-light;
+
+  &:hover {
+    background: $purple-dark;
+  }
+}
+
+.no-tasks {
+  p {
+    margin: 20px;
+    font-family: Kanit, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}

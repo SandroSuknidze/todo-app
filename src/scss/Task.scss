@@ -1,0 +1,95 @@
+@import 'colors';
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 43px;
+  margin: 17px 0;
+
+  border-bottom: 1px solid $purple-light;
+  padding-bottom: 17px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+
+  .checkbox {
+    width: 26px;
+    height: 26px;
+    border: 1px solid $purple-light;
+    border-radius: 2px;
+    user-select: none;
+    text-align: center;
+    cursor: pointer;
+
+    img {
+      margin: 4px 5px 7px 6px;
+    }
+
+
+    &.checked {
+      background-color: $purple-light;
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 8px;
+    gap: 10px;
+
+
+    img {
+      cursor: pointer;
+      margin: auto;
+    }
+
+  }
+
+  .note {
+    font-size: 20px;
+    margin: auto;
+    line-height: 20px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 17px;
+    height: 26px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    & input {
+      background: transparent;
+      color: $white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  .done {
+    text-decoration: line-through #969696;
+    color: rgba(255, 255, 255, .5);
+    text-decoration-thickness: 1px;
+    font-weight: 400;
+
+  }
+
+
+}
+
